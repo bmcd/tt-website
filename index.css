@@ -1,0 +1,257 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background: #edeff0;
+}
+
+.clear:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.row {
+	width: 100%;
+}
+
+.top-bar {
+	background: #27ae60;
+	height: 50px;
+}
+
+.centered {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.title {
+	float: left;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.title a {
+	padding: 0 10px;
+	font-size: 30px;
+	line-height: 50px;
+	color: white;
+	text-decoration: none;
+}
+
+.right {
+	float: right;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.right a.twitter {
+	padding: 12px 10px;
+	height: 26px;
+	display: block;
+}
+
+.right a.email {
+	padding: 8px 10px;
+	height: 32px;
+	display: block;
+}
+
+.right a:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h3 {
+	font-size: 24px;
+	color: #AE3127;
+}
+
+h4 {
+	font-size: 20px;
+	color: #666;
+}
+
+.tag-line {
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 35px;
+}
+
+.button-box {
+	display: block;
+	text-align: center;
+	padding-bottom: 105px;
+}
+
+.available {
+	display: inline-block;
+	font-size: 20px;
+}
+
+a.button {
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	background: #FAAF2C;
+	border: 1px outset buttonface;
+	cursor: pointer;
+	font-family: 'Lucida Grande';
+	text-decoration: none;
+	color: black;
+	margin: 0 5px;
+}
+
+a.button:hover {
+	background: #FDD082;
+}
+
+a.sublink {
+	font-size: 12px;
+	display: block;
+	margin-top: 15px;
+}
+
+.try-it-out {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.down-arrow {
+	border-top: 17px solid black;
+	border-right: 20px solid transparent;
+	border-left: 20px solid transparent;
+	border-radius: 5px;
+	height: 0;
+	width: 0;
+	display: inline-block;
+}
+
+.example {
+	text-align: center;
+}
+
+.korean {
+	font-size: 28px;
+	line-height: 45px;
+	display: inline-block;
+	text-align: left;
+	background: white;
+	padding: 25px;
+	border-radius: 15px;
+	max-width: 660px;
+	margin-bottom: 50px;
+}
+
+.korean span {
+	font-family: 'Apple SD Gothic Neo', 'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', '굴림', 'Gulim', '돋움', 'Dotum', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+	white-space: nowrap;
+}
+
+.korean span:hover {
+	background: #b3d4fd;
+}
+
+.def-box {
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	margin: 0.5rem 0 1rem 0;
+	border-radius: 2px;
+	min-width: 120px;
+	display: none;
+  	background-color: #f5f5f5;
+	position: absolute;
+	max-width: 200px;
+	padding: 8px;
+	z-index: 9999999999999;
+}
+
+#update-notification a {
+	cursor: pointer;
+	color: #2980b9;
+	text-decoration: underline;
+}
+
+.divider {
+	height: 8px;
+}
+
+.dict-word {
+	font-family: 'Apple SD Gothic Neo', 'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', '굴림', 'Gulim', '돋움', 'Dotum', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+	font-size: 16px;
+	color: #000;
+	display: block;
+}
+
+.dict-def {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #000;
+	max-width: 180px;
+	padding-left: 5px;
+	padding-bottom: 2px;
+	clear: both;
+    display: block;
+}
